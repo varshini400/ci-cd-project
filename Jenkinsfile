@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('checkout') {
             steps {
-                git 'https://github.com/varshini400/ci-cd-project'
+                git branch: 'main', url: 'https://github.com/varshini400/ci-cd-project'
             }
         }
         stage ('build') {
