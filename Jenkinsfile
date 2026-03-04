@@ -14,7 +14,7 @@ pipeline {
         }
         stage ('run') {
             steps {
-                sh 'docker run -itd -p 8081:80 image1:v1'
+                sh 'docker run -itd -p 8082:80 image1:v1'
             }
         }
     }
